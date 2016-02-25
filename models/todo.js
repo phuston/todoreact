@@ -2,9 +2,9 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var Todo = new Schema({
-	_id: {type: String},
+	time: Number,
 	content: String,
-	done: boolean,
+	completed: Boolean,
 }, {collection: 'Todo'});
 
 module.exports = mongoose.model('Todo', Todo);
